@@ -5,14 +5,15 @@ A [Jekyll](http://jekyllrb.com/) plugin to simplify the creation of [mermaid](ht
 
 ## Installation
 
-1. Install the gem:
-  ```bash
-  gem install jekyll-mermaid
+1. add this on your gemfile:
+  ```
+  gem 'jekyll-mermaid-forked', '1.0.0.1', git: 'https://github.com/RobbiNespu/jekyll-mermaid-forked', branch:'master', ref: '2627b41'
   ```
 
 2. Add the gem to your Jekyll `_config.yml`:
   ```ruby
-  gems: [jekyll-mermaid]
+  plugins:
+   - jekyll-mermaid-forked
   ```
 
 Please see the [Jekyll documentation](http://jekyllrb.com/docs/plugins/#installing-a-plugin) for more installation options.
@@ -24,7 +25,7 @@ You'll need to update your `_config.yml` with the location of the [mermaid](http
 
 ```ruby
 mermaid:
-  src: 'path/to/mermaid.js'
+ src: 'https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.5.0/mermaid.js'
 ```
 
 
